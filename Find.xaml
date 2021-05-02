@@ -1,0 +1,16 @@
+﻿<Window x:Class="DataBase_PhoneBook.Find"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBase_PhoneBook"
+        mc:Ignorable="d"
+        Title="Find" Height="200" Width="800">
+    <Grid>
+        <DataGrid x:Name="Abonent_Info" HorizontalAlignment="Left" Height="140" Margin="285,0,0,0" VerticalAlignment="Center" Width="474"/>
+        <TextBox x:Name="textBox_Surname" HorizontalAlignment="Left" Height="24" Margin="55,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
+        <Button x:Name="Find_Button" Content="Найти" HorizontalAlignment="Left" Height="32" Margin="55,105,0,0" VerticalAlignment="Top" Width="130" Click="Find_Button_Click"/>
+        <Label Content="Введите фамилию" HorizontalAlignment="Left" Margin="55,22,0,0" VerticalAlignment="Top" Height="26" Width="114"/>
+
+    </Grid>
+</Window>

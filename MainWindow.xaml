@@ -1,0 +1,17 @@
+﻿<Window x:Class="DataBase_PhoneBook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBase_PhoneBook"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="554" Width="874">
+    <Grid>
+        <DataGrid x:Name="Abonent_Info" HorizontalAlignment="Center" Height="289" Margin="0,10,0,0" VerticalAlignment="Top" Width="854" RenderTransformOrigin="0.502,0.496">
+        </DataGrid>
+        <Button x:Name="Add_Data" Content="Добавить" HorizontalAlignment="Left" Height="60" Margin="75,408,0,0" VerticalAlignment="Top" Width="147" Cursor="Arrow" Click="Add_Data_Click"/>
+        <Button x:Name="Find" Content="Найти" HorizontalAlignment="Left" Height="60" Margin="266,408,0,0" VerticalAlignment="Top" Width="147" Cursor="Arrow" Click="Find_Click"/>
+        <Button x:Name="Delete" Content="Удалить" HorizontalAlignment="Left" Height="60" Margin="643,408,0,0" VerticalAlignment="Top" Width="147" Cursor="Arrow" Click="Delete_Click"/>
+        <Button x:Name="Change" Content="Изменить" HorizontalAlignment="Left" Height="60" Margin="454,408,0,0" VerticalAlignment="Top" Width="147" Cursor="Arrow" Click="Change_Click"/>
+    </Grid>
+</Window>
