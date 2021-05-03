@@ -15,10 +15,9 @@ namespace DataBase_PhoneBook
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            Database.SetInitializer<Phone_Book_Context>(null);
+            Database.SetInitializer<Phone_Book_Context>(new CreateDatabaseIfNotExists<Phone_Book_Context>());
+            Database.SetInitializer<Phone_Book_Context>(new DropCreateDatabaseIfModelChanges<Phone_Book_Context>());
             base.OnModelCreating(modelBuilder);
         }
-
-        
     }
 }
